@@ -1,0 +1,291 @@
+:root {
+  --ink: #232239;
+  --muted: #77768a;
+  --purple: #6c63ff;
+  --line: #eeedf3;
+  --surface: #ffffff;
+  --canvas: #f7f7fb;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.app-navbar {
+  background: #232239;
+  padding: 0.85rem 0;
+}
+
+.navbar-brand {
+  letter-spacing: -0.04em;
+  font-size: 1.3rem;
+}
+
+.brand-dot {
+  color: #a59eff;
+}
+
+.btn-brand {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: #fff;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background: #5750e8;
+  border-color: #5750e8;
+  color: #fff;
+}
+
+.page-heading h1,
+.panel-card h2,
+.expense-form-card h1 {
+  color: var(--ink);
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+.eyebrow {
+  color: var(--purple);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.month-pill {
+  border: 1px solid #e8e7f0;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.summary-card,
+.budget-card,
+.panel-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 4px 18px rgba(38, 35, 75, 0.035);
+}
+
+.summary-card {
+  height: 100%;
+  padding: 1.2rem 1.35rem;
+}
+
+.summary-label {
+  color: var(--muted);
+  font-size: 0.83rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+
+.summary-value {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  margin-bottom: 0.45rem;
+}
+
+.summary-foot {
+  color: #9998a8;
+  font-size: 0.77rem;
+  margin-bottom: 0;
+}
+
+.budget-card {
+  padding: 1.3rem 1.4rem;
+}
+
+.budget-progress {
+  height: 0.65rem;
+  border-radius: 999px;
+  background: #efeff5;
+}
+
+.budget-progress .progress-bar {
+  border-radius: 999px;
+}
+
+.budget-empty {
+  border: 1px dashed #dedde8;
+  border-radius: 9px;
+  color: #9998a8;
+  font-size: 0.85rem;
+  padding: 0.55rem 0.8rem;
+}
+
+.budget-message {
+  border-radius: 9px;
+  font-size: 0.9rem;
+  padding: 0.7rem 0.9rem;
+}
+
+.budget-caution {
+  background: #fff6df;
+  color: #79550a;
+}
+
+.budget-danger {
+  background: #fff0ef;
+  color: #a4332d;
+}
+
+.panel-card {
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.chart-wrap {
+  height: 250px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.chart-pie {
+  height: 220px;
+}
+
+.chart-empty {
+  color: #9998a8;
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0;
+  text-align: center;
+}
+
+.table-title-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.filter-form {
+  background: #fafafe;
+  border: 1px solid #f0eff5;
+  border-radius: 11px;
+  margin: 0 0 1rem;
+  padding: 0.9rem;
+}
+
+.filter-form .form-label {
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+  border-color: #e7e6ee;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #a59eff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.13);
+}
+
+.expense-table thead th {
+  border-bottom-color: var(--line);
+  color: #89889a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.8rem;
+  text-transform: uppercase;
+}
+
+.expense-table tbody td {
+  border-bottom-color: #f1f0f5;
+  color: #464558;
+  font-size: 0.88rem;
+  padding: 0.85rem 0.8rem;
+}
+
+.expense-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.category-tag {
+  background: #f0efff;
+  border-radius: 999px;
+  color: #5148c7;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 650;
+  padding: 0.3rem 0.65rem;
+}
+
+.note-cell {
+  max-width: 260px;
+}
+
+.empty-state {
+  padding: 3rem 1rem 2.7rem;
+  text-align: center;
+}
+
+.empty-icon {
+  align-items: center;
+  background: #f0efff;
+  border-radius: 15px;
+  color: var(--purple);
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 48px;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  width: 48px;
+}
+
+.form-page {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.back-link {
+  color: #69687c;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--purple);
+}
+
+.expense-form-card {
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+@media (max-width: 575.98px) {
+  .panel-card {
+    padding: 1rem;
+  }
+
+  .expense-table thead th,
+  .expense-table tbody td {
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+  }
+
+  .note-cell {
+    max-width: 120px;
+    overflow-wrap: anywhere;
+  }
+}

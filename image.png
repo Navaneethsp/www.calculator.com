@@ -1,0 +1,12 @@
+from PIL import Image, ImageDraw, ImageFont
+
+img = Image.new("RGB", (1200, 400), color="#0A2540")   # dark blue background
+draw = ImageDraw.Draw(img)
+
+title_font = ImageFont.truetype("arial.ttf", 60)
+sub_font = ImageFont.truetype("arial.ttf", 30)
+
+draw.text((60, 120), "Navaneeth SP", font=title_font, fill="white")
+draw.text((60, 220), "Python Developer | Cloud Learner", font=sub_font, fill="#00D4FF")
+
+img.save("banner.png")
